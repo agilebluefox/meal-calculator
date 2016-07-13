@@ -115,7 +115,7 @@ function logItems (dish, cost) {
 
 // Print the subtotal to the console
 function logSubtotal (subtotal) {
-    console.log('Subtotal: $' + subtotal.toFixed(2));
+    console.log('---------------\nSubtotal: $' + subtotal.toFixed(2));
 }
 
 // Print the tip amount to the console
@@ -130,12 +130,12 @@ function logTax (tax) {
 
 // Print the total amount to the console
 function logTotal (total) {
-    console.log('Total: $' + total.toFixed(2));
+    console.log('--------------\nTotal: $' + total.toFixed(2));
 }
 
 // Print a header to separate the individual bills
 function logDinerBill (name) {
-    console.log('\n-----------The bill for ' + name + ' is: -----------');
+    console.log('\n-----------The bill for ' + name + ': -----------\n');
 }
 
 // The diners
@@ -154,7 +154,7 @@ max.addItem(salmon, bread, milk);
 amy.addItem(pizza, vegetable_mix, water);
 
 // Print a header to show the start of the total bill
-console.log('\n------------The total bill for all diner\'s is: -----------\n');
+console.log('\n------------The total bill for all diner\'s: -----------\n');
 
 // Calculate the total bill
 bill.subtotal = bill.calcSubtotal(david, vincent, amy, max);
